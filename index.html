@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elephants</title>
+    <style>
+        body {
+          background: linear-gradient(#24527a, #5dacbd);
+        }
+
+        h1 {
+          color: #a7bcb9;
+          text-align: center;
+        }
+
+        h2 {
+          color: #5dacbd;
+          text-align: center;
+        }
+
+        h3 {
+          color: #a7bcb9;
+          text-align: center;
+        }
+        img {
+          display: block;
+          text-align: center;
+          border-radius: 25px;
+        }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+
+        p {
+          color: #e0ebeb;
+          text-align: center;S
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+          padding: 50px;
+          border-radius: 25px;
+          background-color: #e0ebeb;
+          color: #5dacbd;
+          font-size: 20px;
+          font-weight: linearGradient;
+          box-shadow: grey;
+        }
+
+        button:hover {
+          background-color: #5dacbd;
+          color: #24527a;
+        }
+
+        .container {
+          display: flex;
+          background-color: #5dacbd;
+          padding: 50px;
+          border: #a7bcb9;
+          margin: 50px;
+          border-radius: 25px;
+        }
+
+        a:link {
+            color: #24527a;
+        }
+        a:visited{
+      color: black;
+         }
+         a:hover{
+         color:#5dacbd;
+        }
+
+        a:active {
+      color:red;
+         }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Elephants</h1>
+      <h2>I Love Elephants</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/277/original/_116601370_c0495712-african_elephants_at_a_waterhole.jpg?1623038245"
+        alt="Herd of Elephants"
+        class="center"
+      />
+    </div>
+    <section>
+      <container class="container">
+        <p>
+          <strong>Elephants</strong> are truly amazing creatures. There are
+          three species of elephants; African bush, African forest and the Asian
+          elephant. You can tell them apart by their ears. Asian elephants are
+          smaller with small ears, while African elephants have large ears to
+          fan themselves. Elephants are the largest land mammal. Elephants are
+          extremely inteligent and have strong bonds within their herds. When an
+          elephants dies, the other elephants mourn their loss, showing strong
+          emoitonal tendencies. <em>I love elephants</em>.
+        </p>
+      </container>
+    </section>
+    <hr />
+    <span>
+      <h3>
+        <a
+          href="https://www.wwf.org.uk/learn/fascinating-facts/elephants"
+          target="blank"
+          >Click for more <br />
+          info
+        </a>
+      </h3>
+      <button>Quick Question</button>
+    </span>
+    <script>
+      function likeElephants() {
+        let h2 = document.querySelector("h2");
+        let name = prompt("What is your name?");
+        let likeElephants = prompt("Do you like Elephants?");
+        if (likeElephants.toLowerCase() === "yes") {
+          alert(`You're pretty cool, ${name}!`);
+        } else {
+          alert(`Really ${name}? Whats not to like?`);
+        }
+      }
+      let likeButton = document.querySelector("button");
+      likeButton.addEventListener("click", likeElephants);
+    </script>
+  </body>
+</html>
+
+
